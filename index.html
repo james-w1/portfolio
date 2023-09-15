@@ -23,7 +23,7 @@
     </head>
     <body x-data="{darkMode: $persist(false)}" :class="{'dark': darkMode === true }" class="antialiased">
         <div class="bg-slate-50 dark:bg-slate-800">
-            <div class="z-10 sticky top-0 backdrop-blur bg-slate-200/60 flex p-2 border-b border-solid border-slate-300/10 shadow-lg">
+            <div class="z-20 sticky top-0 backdrop-blur bg-slate-200/60 flex p-2 border-b border-solid border-slate-300/10 shadow-lg">
                 <h1 class="font-semibold flex-1">
                     James W
                 </h1>
@@ -33,22 +33,22 @@
                         </button>
                     </div>
             </div>
-            <div class="absolute z-8 top-0 inset-x-0 flex overflow-hidden pointer-events-none">
+            <div class="z-1 blur absolute top-0 inset-x-0 flex overflow-hidden pointer-events-none">
                 <div class="justify-end">
                     <img src="Untitled.png" />
                 </div>
             </div>
-            <section class="z-9">
+            <section class="z-10">
                 <div class="mx-auto max-w-screen-xl px-4 sm:py-20 lg:py-32 lg:flex h-screen">
                     <div class="mx-auto max-w-xl text-center">
                         <div class="pb-4 flex justify-center">
-                            <div class="">
+                            <div class="z-10">
                                 <img class="w-auto h-32 rounded-full border border-solid border-slate-300" src="https://avatars.githubusercontent.com/u/73392543?v=4"></img>
                             </div>
                         </div>
                         <h1 class="text-3xl font-semibold sm:text-5xl">About Me</h1>
 
-                        <p class="mt-4 sm:text-xl/relaxed"> I am a recent graduate with a Bsc in Software Engineering from Swansea University. I am excited to look for a job in industry and grow my knowledge and expertise. You can find an up to date copy of my CV here. </p>
+                        <p class="mt-4 sm:text-xl/relaxed"> I am a recent graduate with a Bsc in Software Engineering from Swansea University. I like working on projects in my spare time, you can find some of them here.</p>
                     </div>
                 </div>
                 <div class="absolute w-full bottom-2 flex flex-row justify-center">
@@ -62,14 +62,48 @@
 
             <section class="bg-slate-200">
                 <div
-                    class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen"
+                    class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen flex-col"
                     >
-                    <div class="mx-auto max-w-xl text-center">
-                        <h1 class="text-xl font-semibold sm:text-4xl">Projects</h1>
+                    <div class="mx-auto max-w-xl text-center flex-0 pb-4">
+                        <h1 class="text-3xl font-semibold sm:text-4xl">Projects</h1>
                         <p class="mt-4 sm:text-lg/relaxed">Some of the projects I have worked on both in university and as side-projects. You can find more of my projects on my github.</p>
                     </div>
-                    <div>
-
+                    <!-- Card Container -->
+                    <div class="max-w-full flex-1 flex flex-col md:flex-row gap-6 p-4">
+                        <div class="flex-1">
+                            <div class="bg-slate-100 content-center overflow-hidden shadow-lg rounded-md">
+                                <div class="bg-slate-800" style="background-image: url(https://github.com/james-w1/gregynogGameJam/raw/main/Screenshots/pickUpPig.png)">
+                                    <div class="backdrop-blur-md">
+                                        <img class="mx-auto" src="https://github.com/james-w1/gregynogGameJam/raw/main/Screenshots/pickUpPig.png"></img>
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <h2 class="text-xl">Gregynog Game Jam</h2>
+                                    <hr class="m-3"/>
+                                    <p class="text-gray-500 text-sm/relaxed">Game created in two days for the Swansea University Gregynog Game Jam. The theme was "A Method to Decide the next Prime Minister"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="bg-slate-100 overflow-hidden shadow-lg rounded-md">
+                                <img src="https://github.com/james-w1/cs384-gamedev/raw/main/screenshot1.png"></img>
+                                <div class="p-4">
+                                    <h2 class="text-xl">Scorched Earth</h2>
+                                    <hr class="m-3"/>
+                                    <p class="text-gray-500 text-sm/relaxed">A game in the style of the MS-DOS classic "Scorched Earth" created in unity using the State Machine Pattern for turns.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <div class="bg-slate-100 overflow-hidden shadow-lg rounded-md">
+                                <img src="https://github.com/james-w1/cs348-coursework/blob/main/Screenshot%20from%202023-08-01%2021-07-35.png?raw=true"></img>
+                                <div class="p-4">
+                                    <h2 class="text-xl">Laravel Forum</h2>
+                                    <hr class="m-3"/>
+                                    <p class="text-gray-500 text-sm/relaxed">A simple forum-like website made using Laravel, Livewire, and TailwindCSS. It has basic forum features such as user accounts, posts and replies.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -79,7 +113,7 @@
                     class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen"
                     >
                     <div class="mx-auto max-w-xl text-center">
-                        <h1 class="text-xl font-semibold sm:text-4xl">Contact Me</h1>
+                        <h1 class="text-3xl font-semibold sm:text-4xl">Where To Find Me</h1>
                     </div>
                 </div>
             </section>
