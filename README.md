@@ -1,3 +1,11 @@
-# Portfolio Website
+# Portfolio Site
 
-This is my simple portfolio website showcasing some projects and a link to my account and linkedin page. It is made using [ bootstrapcss ](https://getbootstrap.com/) and deployed using [ github pages ](https://pages.github.com/).
+Currently remaking my portfolio site with a new tech-stack:
+
+### Landing Page
+    * AlpineJS
+    * TailwindCSS
+    * Github Pages
+### "Blog"
+    * Neorg Mode
+    * Makefile
